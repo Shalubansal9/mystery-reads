@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Mulish&family=Poppins:ital,wght@0,100;0,300;0,500;0,700;0,800;1,100;1,300;1,400&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --primary-color:#755139ff;
+    --secondary-color:#d4b996ff;
+}
+body{
+    background-color: var(--primary-color);
+}
+html{
+    font-size: 75.5%;
+}
+.header{
+    width: 100%;
+    height: 500px;
+    color: var(--secondary-color);
+    box-shadow: 0 5px 10px var(--secondary-color);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.header ::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.row2{
+    position: absolute;
+    /* top: 10px;
+    right: 150px; */
+    top: 4%;
+    right: 10%;
+    text-align: center;
+}
+.row1 {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/public/images/lib.jpg);
+    clip-path: circle(95% at left 300px);
+    height: 100%;
+    width: 50%;
+}
+.row1 h1{
+    font-size: 3rem;
+    text-align: center;
+    margin-left: -17%;
+    font-family: 'Bodoni Moda', serif;
+    margin-top: 25%;
+}
+.row2 h2{
+    font-size: 3rem;
+    /* margin-top: 20px;
+    margin-bottom: 15px; */
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.row2 img{
+    margin-top: 36px;
+    width: 280px;
+}
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search input{
+    outline: 0;
+    border: 0;
+    width: 350px;
+    height: 30px;
+    padding: 0 0.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.search button{
+    outline: none;
+    border: none;
+    height: 30px;
+    padding: 0, 0.5rem;
+    width: 50px;
+
+}
+.search button .fa-sharp{
+    margin-top: 20%;
+    margin-right: 10%;
+}
+/* card css */
+.container{
+    width: 65%;
+    margin: 0 auto;
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,0.5fr));
+    grid-gap: 20px;
+    box-sizing: border-box;
+}
+.card{
+    background-color: var(--secondary-color);
+    border-radius: 1rem;
+    padding: 0.5rem;
+    margin-bottom: 10px;
+    box-shadow: 0 5px 5px rgba(212,185,150,0.5);
+    transition: 0.5s;
+    text-align: center;
+    position: relative;
+}
+.card img{
+    width: 100%;
+    height: 200px;
+    border-radius: 1rem 1rem 0 0;
+}
+.cardbottom{
+    display: flex;
+    flex-direction: column;
+}
+.cardbottom .cardtitle{
+    font-size: 15px;
+    margin-bottom: 4px;
+    margin-top: 7px;
+}
+.cardamount{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-size: 13px;
+    font-weight: bold;
+    padding: 0.2rem;
+}
+.card:hover{
+    cursor: pointer;
+    transform: scale(0.9);
+    background-color: rgba(255,255,255,0.8);
+}
+/*  */
+.deschead{
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.1));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.deschead_inner{
+    background: white;
+    width: 700px;
+    height: 650px;
+    padding: 1.5rem;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-size: 1,3rem;
+}
+.innerbox{
+    height: 215px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.innerbox img{
+    height: 200px;
+    width: 165px;
+    margin-right: 20px;
+}
+.innerbox h3{
+    margin-top: 10px;
+    color: rgb(60, 233, 60);
+}
+.innerbox h4{
+    color: rgb(4, 56, 93);
+}
+.innerbox button{
+    outline: none;
+    border: none;
+    width: 100px;
+    border-radius: 5px;
+    background-color: #24a0ed;
+    color: white;
+    font-weight: bold;
+    padding: 0.3rem 0.5rem;
+}
+.close{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    outline: none;
+    border: none;
+    font-size: 17px;
+    background-color: transparent;
+}
+.detaildescription{
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 13px;
+}
